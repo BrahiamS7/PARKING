@@ -1,0 +1,114 @@
+.container {
+  max-width: 1100px;
+}
+
+.card-option {
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-option img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-option .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.alert {
+  font-size: 0.95rem;
+}
+
+.salida-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .card-option img {
+    height: 140px;
+  }
+}
+
+table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #0d6efd;
+  color: white;
+}
+
+tbody tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+.parqueadero-vertical {
+  display: flex;
+  flex-direction: column; /* Vertical */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+
+.parqueadero {
+  width: 80px;
+  height: 120px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ocupado {
+  border: 2px solid red;
+  background:lightcoral;
+}
+.libre{
+  background-color: lightgreen;
+}
+
+
